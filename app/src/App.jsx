@@ -21,7 +21,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch(
+      const response = await fetch("http://localhost:8888/api/import/IdentifyPairEmployees",
         { method: "POST", body: formData }
       );
 
