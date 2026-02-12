@@ -51,7 +51,7 @@ function App() {
     })
     .flat();
 
-  allRows.sort((a, b) => b.totalDaysForPair - a.totalDaysForPair);
+  allRows.sort((a, b) => b.daysWorked - a.daysWorked);
 
   const totalItems = allRows.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
